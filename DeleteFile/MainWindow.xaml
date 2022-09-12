@@ -1,0 +1,22 @@
+﻿<Window x:Class="DeleteFile.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DeleteFile"
+        mc:Ignorable="d"
+        Title="DirectX不要ファイル削除ツール" Height="220" Width="300"
+        ResizeMode="CanMinimize">
+    <DockPanel>
+        <Menu DockPanel.Dock="Top">
+            <MenuItem Header="ヘルプ">
+                <MenuItem Header="バージョン情報" Click="Show_Version"/>
+            </MenuItem>
+            
+        </Menu>
+        <StackPanel Orientation="Vertical" HorizontalAlignment="Center">
+            <Button Height="50"  FontSize="30" Content="フォルダを選択" Click="Select_File" Margin="20" RenderTransformOrigin="0.506,-1.081"/>
+            <Button Height="50"  FontSize="30" Content="ファイルを削除する" Click="Delete_File" Margin="20" RenderTransformOrigin="0.506,-1.081"/>
+        </StackPanel>
+    </DockPanel>
+</Window>
